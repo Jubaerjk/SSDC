@@ -27,7 +27,6 @@ html {
 body {
     background-color: #2e261f;
     font-family: 'inter', sans-serif;
-    padding: 1.2rem;
 }
 
 
@@ -35,12 +34,10 @@ body {
 
 /* For Container */
 .container {
-    width: 95%;
-    max-width: 136rem;
+    width: 100%;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 0.8rem;
-
-    background-color: rgb(66, 66, 66);
 }
 
 /* For All Anchor Tags */
@@ -50,7 +47,7 @@ header a {
     color: white;
 }
 
-.section-heading {
+.section-title {
     font-size: 32px;
     margin-bottom: 24px;
     text-align: center;
@@ -79,44 +76,86 @@ header a {
 
 
 /* HEADER NOTICE BAR Start */
-header .noticeBar {
+
+
+/* header .notice-bar {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+
+
+} */
+
+header {
+    /* height: 10vh; */
+    /* position: relative; */
+}
+
+/* Notice Bar with Keyframes Animation Start */
+header .notice-bar {
     /* color */
-    background-color: #1f1f21;
+    background: linear-gradient(90deg, #ff4d4d, #ff944d);
 
     /* font */
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.05rem;
 
     /* Box-Model */
-    padding: 1rem;
-    border-radius: 0.8rem;
-    margin-bottom: 1.2rem;
+    padding: 0.5rem 1rem;
 
+    /* animation */
+    animation: pulse 2s infinite;
+
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; */
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.85;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Notice Bar with Keyframes Animation End */
+
+/* Notice Bar Container Start */
+
+header .notice-bar .container {
     /* CSS Layout */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-header .noticeBar .contacts,
-header .noticeBar .social-box,
-header .noticeBar .social-box .social-items {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+
+header .notice-bar .social-box p {
+    margin-bottom: 0.8rem;
 }
 
-header .noticeBar .contacts a,
-header .noticeBar .social-box a {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+header .notice-bar .social-box a {
+    display: inline-block;
+    margin-left: 0.8rem;
+    transition: transform 0.25s ease, color 0.25s ease;
 }
 
-header .noticeBar .social-box a:hover,
-header .noticeBar .social-box a:focus-visible {
+header .notice-bar .social-box a:hover,
+header .notice-bar .social-box a:focus-visible {
+    transform: scale(1.15);
     color: var(--hover-color);
 }
+
+/* Notice Bar Container End */
 
 /* Header Notice Bar End */
 

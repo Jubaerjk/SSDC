@@ -35,65 +35,71 @@
 
     <header>
         <!-- NOTICE BAR Start -->
-        <div class="container">
+        <div class="notice-bar" role="banner">
+            <div class="container">
 
-            <div class="noticeBar">
-                <div class="contacts">
-                    <a href="tel:01326480567">
-                        <i class="fa-solid fa-mobile"></i>
-                        01326-480567
+                <!-- Notice Bar Left -->
+                <div class="contacts" aria-label="Contact Information">
+                    <a href="tel:01326480567" aria-label="Call 01326-480567">
+                        <i class="fa-solid fa-mobile"></i> 01326-480567
                     </a>
 
-                    <a href="tel:01608383123">
-                        <i class="fa-solid fa-mobile"></i>
-                        01608-383123</a>
+                    <a href="tel:01608383123" aria-label="Call 01608-383123">
+                        <i class="fa-solid fa-mobile"></i> 01608-383123
+                    </a>
 
-                    <a href="mailto:info.ssdcbd@gmail.com" target="_blank">
-                        <i class="fa-solid fa-envelope-circle-check"></i>
-                        info.ssdcbd@gmail.com
+                    <a href="mailto:info.ssdcbd@gmail.com" target="_blank" aria-label="Email info@ssdcbd@gmail.com">
+                        <i class="fa-solid fa-envelope-circle-check"></i> info.ssdcbd@gmail.com
                     </a>
                 </div>
 
-                <div class="social-box">
+                <!-- Notice Bar Right -->
+                <div class="social-box" aria-label="Follow us on social media">
                     <p><small>Follow Us On: </small></p>
-                    <div class="social-items">
 
+                    <div class="social-items" aria-label="Social Media Links">
                         <a href="https://www.facebook.com/SSDCBD" target="_blank" rel="noopener noreferrer"
-                            aria-label="Facebook page">
+                            aria-label="Facebook page" title="Facebook">
                             <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                         </a>
 
-                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter page" title="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
 
                         <a href="https://wa.me/+8801326480567" target="_blank" rel="noopener noreferrer"
-                            aria-label="WhatsApp link">
+                            aria-label="WhatsApp link" title="WhatsApp">
                             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                         </a>
 
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram page"
+                            title="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
 
                         <a href="https://www.youtube.com/@SolutionSquadBD" target="_blank" rel="noopener noreferrer"
-                            aria-label="YouTube link">
+                            aria-label="YouTube link" title="YouTube">
                             <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                         </a>
-
                     </div>
                 </div>
-            </div>
-            <!-- NOTICE BAR End -->
 
-            <!-- NAVBAR Start -->
-            <nav class="navbar" aria-label="Main Navigation">
+            </div>
+        </div>
+        <!-- NOTICE BAR End -->
+
+
+        <!-- NAVBAR Start -->
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <div class="container">
 
                 <div class="navbar-main">
-                    <div class="logo-area">
-                        <a href="index.html" class="logo">
-                            <img src="./Assets/Images/SSDC.png" width="100%" height="auto" alt="SSDC Logo">
-                        </a>
-                    </div>
+                    <a href="index.html" class="logo">
+                        <img src="./Assets/Images/SSDC.png" width="40px" height="au" alt="SSDC Logo" loading="lazy">
+                    </a>
                     <div class="navmenu">
                         <ul>
-                            <li><a href="#hero-banner">Home</a></li>
+                            <li><a href="#hero-banner" class="active">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Service</a></li>
                             <li><a href="#team">Team</a></li>
@@ -104,8 +110,17 @@
                 </div>
 
                 <a href="#contact" class="btn navbar-btn">Contact Us</a>
-            </nav>
-            <!-- NAVBAR End -->
+
+                <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0"
+                    aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </nav>
+        <!-- NAVBAR End -->
 
         </div>
     </header>
@@ -144,7 +159,7 @@
 
                 <div class="section-text">
                     <p class="floating-title">~ About Us ~</p>
-                    <h2 class="section-heading">Solution Squad Design & Construction</h2>
+                    <h2 class="section-title">Solution Squad Design & Construction</h2>
                     <p class="section-para para-1">
                         We are a multidisciplinary design and engineering firm offering architectural design, structural
                         engineering, and construction supervision services. Our work is driven by technical excellence,
@@ -185,10 +200,12 @@
         <!-- Services Section Start-->
         <section id="services">
             <div class="container">
-                <p class="floating-title">~ What we offer! ~</p>
-                <h2 class="section-heading">Explore Our Services</h2>
+                <div class="services-heading section-heading">
+                    <p class="floating-title">~ What we offer! ~</p>
+                    <h2 class="section-heading">Explore Our Services</h2>
+                </div>
 
-                <div class="service-box" style="background-color: aqua;">
+                <div class="services-content service-box" style="background-color: aqua;">
 
                     <div class="slider-controls">
 
@@ -328,16 +345,26 @@
         </section>
         <!-- Services Section End-->
 
+        <section id="projects">
+
+            <div class="container">
+                <div class="projects-heading section-heading">
+                    <p class="floating-title">~ Recent Projects ~</p>
+                    <h2 class="section-title">Our Projects</h2>
+                </div>
+
+                <div class="projects-content">
+
+
+                </div>
+
+            </div>
+
+        </section>
 
         <section id="team">
 
         </section>
-
-
-        <section id="projects">
-
-        </section>
-
 
         <section id="contact">
 
