@@ -780,6 +780,7 @@ header .navbar .navmenu ul {
 
 #projects .container .projects-content {
     display: flex;
+    justify-content: center;
     gap: 2.4rem;
     flex-wrap: wrap;
     border-radius: 0.8rem;
@@ -855,13 +856,83 @@ header .navbar .navmenu ul {
 
 
     /* font */
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
 
     /* box-model */
-    padding: 1.2rem 0;
+    padding: 1rem 0;
     border: 0.1rem solid var(--hover-color);
     border-radius: 0.8rem;
+    margin-top: 1.4rem;
+
+}
+
+/* Project Section End */
+
+/* ***************************************************************************************** */
+
+/* Team Section Start */
+
+.team-content {
+    display: flex;
+    gap: 2.4rem;
+}
+
+#team .team-item {
+    background-color: #252525;
+    /* box-model */
+    width: 50rem;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+}
+
+#team .team-item img {
+    border-radius: 0.8rem;
+
+}
+
+#team .team-item .team-item-text {
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+}
+
+#team .team-item .team-item-text .member-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#team .team-item .team-item-text .member-position {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1rem;
+}
+
+#team .team-item .team-item-text .member-description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.2rem;
+}
+
+#team .team-item .team-item-text .member-social {
+    display: flex;
+    gap: 0.8rem;
+}
+
+#team .team-item .team-item-text .member-social a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+#team .team-item .team-item-text .member-social a:hover,
+#team .team-item .team-item-text .member-social a:focus-visible {
+    color: var(--hover-color);
+    transition: var(--transition);
 }
